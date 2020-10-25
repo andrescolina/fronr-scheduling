@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "frontend-scheduling"
+    }
+  },
+  "defaultProject": "frontend-scheduling",
+  "cli": {
+    "analytics": false
+  }
 }
