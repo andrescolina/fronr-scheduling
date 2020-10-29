@@ -1,0 +1,23 @@
+<div *ngFor="let item of items">
+    <a class="menu-list-item" (click)="navTo(item.path)">
+        <div class="icons-list" [ngClass]="{'router-link-active': _router.url.split('/').slice(-1)[0] === item.nickname}">
+            <div>
+                <i class="fa {{item.icon}} icon-theme"></i> {{item.name}}
+            </div>
+            <div>
+                <i class="fa fa-arrow-circle-right icon-arrow"></i>
+            </div>
+        </div>
+    </a>
+    <hr class="border-menu">
+</div>
+<div>
+    <a class="menu-list-item" (click)="logout()">
+        <div class="icons-list">
+            <div>
+                <i class="fa fa-sign-out icon-theme"></i> Cerrar Sesíon
+            </div>
+        </div>
+    </a>
+    <hr class="border-menu">
+</div>

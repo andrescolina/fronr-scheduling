@@ -1,0 +1,66 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    width: 100%;
+}
+
+.icons-list:hover {
+    background-color: #daddd8;
+    color: #335199;
+    border-radius: 5px;
+}
+
+a:first-child {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.mat-list-item {
+    padding: 8px 0;
+    display: flex;
+    width: auto;
+    .routeIcon {
+        margin-right: 40px;
+    }
+}
+
+hr.border-menu {
+    margin: 0;
+    opacity: 0.4;
+}
+
+.icon-arrow {
+    position: relative;
+    right: 8px;
+}
+
+.icons-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    padding-top: 20px;
+    .icon-theme {
+        padding: 8px;
+    }
+}
+
+.router-link-active {
+    background-color: #daddd8;
+    color: #335199;
+    border-radius: 5px;
+}
+
+::ng-deep {
+    .mat-list-item-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 !important;
+        position: relative;
+        height: inherit;
+    }
+}
